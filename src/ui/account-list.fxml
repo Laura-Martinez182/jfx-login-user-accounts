@@ -12,7 +12,7 @@
    <top>
       <BorderPane prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <right>
-            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #AFD6F9;" text="Log out" BorderPane.alignment="CENTER">
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #AFD6F9;" text="Log out" BorderPane.alignment="CENTER">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

@@ -59,7 +59,7 @@
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Button>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#createAccount" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: #AFD6F9;" text="Create Account" GridPane.columnIndex="1">
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: #AFD6F9;" text="Create Account" GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -122,8 +122,8 @@
             </Label>
             <PasswordField fx:id="txtNewPassword" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField fx:id="txtNewUsername" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="281.0" GridPane.columnIndex="1" />
-            <ChoiceBox maxWidth="1.7976931348623157E308" onDragDetected="#ChoiceBox" prefHeight="25.0" prefWidth="275.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <DatePicker fx:id="txBirthday" onAction="#DatePicker" prefHeight="25.0" prefWidth="292.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="cbFavBrowser" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="275.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <DatePicker fx:id="txBirthday" prefHeight="25.0" prefWidth="292.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
                   <GridPane prefHeight="48.0" prefWidth="316.0">
@@ -166,9 +166,9 @@
             </HBox>
             <VBox prefHeight="55.0" prefWidth="272.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <children>
-                  <CheckBox mnemonicParsing="false" text="Software Engineering" />
-                  <CheckBox mnemonicParsing="false" text="Telematic Engineering" />
-                  <CheckBox mnemonicParsing="false" text="Industrial Engineering" />
+                  <CheckBox fx:id="cbSoftware" mnemonicParsing="false" text="Software Engineering" />
+                  <CheckBox fx:id="cbTelematic" mnemonicParsing="false" text="Telematic Engineering" />
+                  <CheckBox fx:id="cbIndustrial" mnemonicParsing="false" text="Industrial Engineering" />
                </children>
             </VBox>
          </children>

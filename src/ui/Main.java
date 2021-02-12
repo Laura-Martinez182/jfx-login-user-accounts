@@ -14,20 +14,19 @@ public class Main extends Application{
 	
 	public static void main(String[] args) {
 		launch(args);
-
+		
 	}
 	
 	
 	public Main () {
-		
-		classroomGUI = new ClassroomGUI(classroom);
-		classroom = new Classroom();
 		
 	}
 	
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		classroom = new Classroom();
+		classroomGUI = new ClassroomGUI(classroom);
 		
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-pane.fxml"));
 		
