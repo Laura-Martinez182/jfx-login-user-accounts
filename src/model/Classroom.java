@@ -1,7 +1,11 @@
 package model;
 
-	import java.util.List;
-	import java.util.ArrayList;
+import java.util.List;
+
+import javafx.scene.image.Image;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 	public class Classroom {
 
@@ -12,8 +16,8 @@ package model;
 			
 		}
 		
-		public void addUsers(String na, String pass, String pic, String gen, String car, String birth, String brow) {
-			users.add(new UserAccount(na, pass, pic, gen, car, birth, brow));
+		public void addUsers(String username, String password, Image picture, String gender, String career, LocalDate birthday, String browser) {
+			users.add(new UserAccount(username, password, picture, gender, career, birthday, browser));
 		}
 		
 		public List<UserAccount> getUsers(){
@@ -21,5 +25,5 @@ package model;
 		}
 	}
 	
-	//dentro de createAccount metodo del boton, llamo classroom.addUsers(na, pass, pic, gen, car, birth, brow));
+	
 	

@@ -1,26 +1,30 @@
 package model;
 
+import java.time.LocalDate;
+
+import javafx.scene.image.Image;
+
 public class UserAccount {
 	
 	private String username;
 	private String password;
-	private String pathPicture;
+	private Image picture;
 	private String gender;
 	private String career;
-	private String birthday;
+	private LocalDate birthday;
 	private String browser;
 
-	public UserAccount(String na, String pass, String pic, String gen, String car, String birth, String brow) {
-		username = na;
-		password = pass;
-		pathPicture = pic;
-		gender = gen;
-		career = car;
-		birthday = birth;
-		browser = brow;
+	public UserAccount(String username, String password, Image picture, String gender, String career, LocalDate birthday, String browser) {
+		this.username = username;
+		this.password = password;
+		this.picture = picture;
+		this.gender = gender;
+		this.career = career;
+		this.birthday = birthday;
+		this.browser = browser;
 	}
 	
-	public String getUserName() {
+	public String getUsername() {
 		return username;
 	}
 	
@@ -28,8 +32,8 @@ public class UserAccount {
 		return password;
 	}
 	
-	public String getPathPicture() {
-		return pathPicture;
+	public Image getPicture() {
+		return picture;
 	}
 	public String getGender() {
 		return gender;
@@ -39,7 +43,7 @@ public class UserAccount {
 		return career;
 	}
 	
-	public String getBirthday() {
+	public LocalDate getBirthday() {
 		return birthday;
 	}
 	
